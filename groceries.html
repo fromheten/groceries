@@ -1,0 +1,34 @@
+<head>
+	<title>Groceries</title>
+</head>
+
+<body>
+	<div class='container'>
+		<h1>Shopping list</h1>
+
+		{{> addItem}}
+		{{> list}}
+
+	</div>
+</body>
+
+<template name="addItem">
+	<input class="newItem" placeholder="What's missing in the fridge?" autofocus>
+</template>
+
+<template name="list">
+	<ul id="list">
+		{{#each items}}
+			{{> item }}
+		{{/each}}
+	</ul>
+</template>
+
+<template name="item">
+	<li>
+		<label>{{ name }}</label>
+		<button class="done">
+			X
+		</button>
+	</li>
+</template>
