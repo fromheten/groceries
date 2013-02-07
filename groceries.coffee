@@ -11,9 +11,9 @@ if Meteor.is_client
 
 	Template.addItem.events =
 		'keyup input.newItem': (evnt) ->
-			console.log evnt
 			if evnt.type == 'keyup' && evnt.which == ENTER
 				inputBox = $('.newItem')
 				console.log(inputBox.val)
-				Items.insert({name: inputBox.val() })
+				Items.insert( {name: inputBox.val() })
+				inputBox.val("")
 				inputBox.focus

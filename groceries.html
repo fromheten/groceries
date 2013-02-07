@@ -5,17 +5,15 @@
 <body>
 	<div class='container'>
 		<h1>Shopping list</h1>
-
 		{{> addItem}}
 		{{> list}}
-
+		{{> todo}}
 	</div>
 </body>
 
 <template name="addItem">
 	<input class="newItem" placeholder="What's missing in the fridge?" autofocus>
 </template>
-
 <template name="list">
 	<ul id="list">
 		{{#each items}}
@@ -31,4 +29,16 @@
 			X
 		</button>
 	</li>
+</template>
+
+<template name="todo">
+	<div id="todo-list">
+		<h2>To-do list</h2>
+		<ul>
+			<li>Saker läggs till längst upp på listan</li>
+			<li>Inmatningsfältet blir tomt när man trucker enter</li>
+			<li>In/utloggning, att listor inte är offentliga</li>
+			<li>Design</li>
+		</ul>
+	</div>
 </template>
