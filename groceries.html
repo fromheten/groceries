@@ -24,10 +24,10 @@
 
 <template name="item">
 	<li>
-		<label>{{ name }}</label>
-		<button class="done">
-			X
-		</button>
+		<a class="done">
+			<i class="icon-ok"></i>
+		</a>
+		{{ name }}
 	</li>
 </template>
 
@@ -36,9 +36,10 @@
 		<h2>To-do list</h2>
 		<ul>
 			<li>Saker läggs till längst upp på listan</li>
-			<li>Inmatningsfältet blir tomt när man trucker enter</li>
+			<li>✓ Inmatningsfältet blir tomt när man trycker enter</li>
 			<li>In/utloggning, att listor inte är offentliga</li>
 			<li>Design</li>
+			<li>Kryss-knappen är på sidan, och inte under saker i listan</li>
 		</ul>
 	</div>
 </template>
