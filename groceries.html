@@ -14,6 +14,7 @@
 <template name="addItem">
 	<input class="newItem" placeholder="What's missing in the fridge?" autofocus>
 </template>
+
 <template name="list">
 	<ul id="list">
 		{{#each items}}
@@ -23,8 +24,8 @@
 </template>
 
 <template name="item">
-	<li>
-		<i class="done icon-ok"></i>
+	<li id="listitem">
+		<button class="btn done">✓</button>
 		{{ name }}
 	</li>
 </template>
@@ -38,6 +39,7 @@
 			<li>In/utloggning, att listor inte är offentliga</li>
 			<li>Mobilvänlig design</li>
 			<li>✓Kryss-knappen är på sidan, och inte under saker i listan</li>
+			<li>Gå och handla</li>
 		</ul>
 	</div>
 </template>
