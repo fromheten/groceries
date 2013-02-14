@@ -9,3 +9,6 @@ bootstrap
 coffeescript
 autopublish
 jquery
+accounts-base
+accounts-ui
+accounts-password
